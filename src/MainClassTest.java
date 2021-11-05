@@ -11,4 +11,12 @@ public class MainClassTest extends MainClass
 
         Assert.assertTrue("wrong local number", localNumber == number);
     }
+    @Test
+    public void testGetClassNumber()
+    {
+        int classNumber = getClass_number();
+        int number = 45;
+
+        Assert.assertTrue("class number less or equal than 45",classNumber > number);
+    }
 }
