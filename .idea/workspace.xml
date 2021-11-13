@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83365999-a788-4eb5-adb6-762560f3ac1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/java_client_4_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/selenium_server_3_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apks/org.wikipedia_50377_apps.evozi.com.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/java-client-4.1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/junit-4.12.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/selenium-server-3.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/selenium_server_standalone_3_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/selenium_server_3_4_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaAppiumAutomation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaAppiumAutomation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/selenium-server-3.4.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainClassTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,16 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.MainClassTest.testGetClassString">
+  <component name="RunManager" selected="JUnit.FirstTest">
+    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -90,6 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.MainClassTest.testGetClassString" />
         <item itemvalue="JUnit.MainClassTest.testGetLocalNumber" />
         <item itemvalue="JUnit.MainClassTest" />
@@ -127,34 +138,40 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1636645373367">
+    <state x="467" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636815225791">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="467" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.825@0.23.1440.825" timestamp="1636815225791" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1636818639733">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1636150384833" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1636645373367" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1636645373363">
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1636818639733" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1636818639732">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1636150384832" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1636645373363" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1636645373362">
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1636818639732" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1636818639731">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1636150384830" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1636645373362" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1636645373366">
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1636818639731" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1636818639732">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1636150384832" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1636645373366" />
-    <state x="208" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1636812515800">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1636818639732" />
+    <state x="193" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1636816577459">
+      <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="208" y="23" width="1024" height="825" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1636812515800" />
-    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1636739135413">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="193" y="23" width="1024" height="825" key="SettingsEditor/0.23.1440.825@0.23.1440.825" timestamp="1636816577459" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1636815857700">
+      <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1636739135413" />
+    <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.23.1440.826@0.23.1440.826" timestamp="1636815857700" />
     <state x="397" y="282" key="com.intellij.ide.util.TipDialog/0.23.1440.827@0.23.1440.827" timestamp="1636645640587" />
     <state x="424" y="351" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1636116311093">
       <screen x="0" y="0" width="1440" height="900" />
