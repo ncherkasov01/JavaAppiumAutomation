@@ -22,7 +22,7 @@ public class FirstTest {
         capabilitues.setCapability("automationName","Appium");
         capabilitues.setCapability("appPackage","org.wikipedia");
         capabilitues.setCapability("appActivity",".main.MainActivity");
-        capabilitues.setCapability("app","/Users/ncherkasov/Desktop/JavaAppiumAutomation/apks/org.wikipedia_50377_apps.evozi.com.apk");
+        capabilitues.setCapability("app","/Users/ncherkasov/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilitues);
     }
@@ -34,7 +34,7 @@ public class FirstTest {
     }
 
     @Test
-    public void firsttest()
+    public void firstTest()
     {
         System.out.println("First test run");
     }
