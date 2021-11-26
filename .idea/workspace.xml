@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83365999-a788-4eb5-adb6-762560f3ac1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apks/org.wikipedia.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apks/org.wikipedia_50377_apps.evozi.com.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="20V3qAG7PXPLN6LeVE4LSfiD2UL" />
@@ -43,12 +47,13 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest.firsttest">
-    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FirstTest.searchFieldContainsText">
+    <configuration name="FirstTest.firstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="firstTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -63,30 +68,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClassTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.searchFieldContainsText" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainClassTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainClassTest.testGetClassString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaAppiumAutomation" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainClassTest" />
-      <option name="METHOD_NAME" value="testGetClassString" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="searchFieldContainsText" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClassTest.testGetLocalNumber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FirstTest.testCancelSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainClassTest" />
-      <option name="METHOD_NAME" value="testGetLocalNumber" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testCancelSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FirstTest.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaAppiumAutomation" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FirstTest" />
+      <option name="METHOD_NAME" value="testCompareArticleTitle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,11 +100,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FirstTest.searchFieldContainsText" />
+        <item itemvalue="JUnit.FirstTest.testCancelSearch" />
+        <item itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
+        <item itemvalue="JUnit.FirstTest.firstTest" />
         <item itemvalue="JUnit.FirstTest.firsttest" />
-        <item itemvalue="JUnit.FirstTest" />
-        <item itemvalue="JUnit.MainClassTest.testGetClassString" />
-        <item itemvalue="JUnit.MainClassTest.testGetLocalNumber" />
-        <item itemvalue="JUnit.MainClassTest" />
       </list>
     </recent_temporary>
   </component>
@@ -132,38 +138,62 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser" timestamp="1637600291749">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="533" y="157" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1637600291749" />
+    <state x="59" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1637521670119">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="59" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.825@0.23.1440.825" timestamp="1637521670119" />
     <state x="467" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1636815225791">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="467" y="189" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.825@0.23.1440.825" timestamp="1636815225791" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1637498983029">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom" timestamp="1637963603086">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1636150384833" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1637498735258" />
-    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1637498820488" />
+    <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.823@0.23.1440.823" timestamp="1637963603086" />
+    <state width="1398" height="264" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1637962889471" />
     <state width="1398" height="213" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1637498983029" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1637498983028">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center" timestamp="1637963603085">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1636150384832" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1637498735257" />
-    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1637498820487" />
+    <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.823@0.23.1440.823" timestamp="1637963603085" />
+    <state width="1398" height="264" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1637962889468" />
     <state width="1398" height="213" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1637498983028" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1637498983027">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left" timestamp="1637963603085">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1636150384830" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1637498735257" />
-    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1637498820487" />
+    <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.823@0.23.1440.823" timestamp="1637963603085" />
+    <state width="1398" height="264" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1637962889465" />
     <state width="1398" height="213" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1637498983027" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1637498983028">
-      <screen x="0" y="23" width="1440" height="826" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right" timestamp="1637963603085">
+      <screen x="0" y="23" width="1440" height="823" />
     </state>
     <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1636150384832" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1637498735258" />
-    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1637498820488" />
+    <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.823@0.23.1440.823" timestamp="1637963603085" />
+    <state width="1398" height="264" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1637962889470" />
     <state width="1398" height="213" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1637498983028" />
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom" timestamp="1637962889475">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1637962889475" />
+    <state width="1398" height="264" key="GridCell.Tab.1.center" timestamp="1637962889473">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1637962889473" />
+    <state width="1398" height="264" key="GridCell.Tab.1.left" timestamp="1637962889472">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1637962889472" />
+    <state width="1398" height="264" key="GridCell.Tab.1.right" timestamp="1637962889474">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="264" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1637962889474" />
     <state x="193" y="23" width="1024" height="825" key="SettingsEditor" timestamp="1636816577459">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
