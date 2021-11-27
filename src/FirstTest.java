@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 
 public class FirstTest {
 
@@ -21,39 +22,59 @@ public class FirstTest {
     public void setUp() throws MalformedURLException {
         DesiredCapabilities capabilitues = new DesiredCapabilities();
 
-        capabilitues.setCapability("platformName","Android");
-        capabilitues.setCapability("deviceName","AndroidTestDevice");
-        capabilitues.setCapability("platformVersion","10");
-        capabilitues.setCapability("automationName","Appium");
-        capabilitues.setCapability("appPackage","org.wikipedia");
-        capabilitues.setCapability("appActivity",".main.MainActivity");
-        capabilitues.setCapability("app","/Users/ncherkasov/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
+        capabilitues.setCapability("platformName", "Android");
+        capabilitues.setCapability("deviceName", "AndroidTestDevice");
+        capabilitues.setCapability("platformVersion", "8");
+        capabilitues.setCapability("automationName", "Appium");
+        capabilitues.setCapability("appPackage", "org.wikipedia");
+        capabilitues.setCapability("appActivity", ".main.MainActivity");
+        capabilitues.setCapability("app", "/Users/ncherkasov/Desktop/JavaAppiumAutomation/apks/org.wikipedia.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilitues);
     }
 
     @After
-    public void  tearDown()
-    {
-            driver.quit();
+    public void tearDown() {
+        driver.quit();
     }
 
-//  Test for lesson 3 ex 2
-    @Test
-    public void searchFieldContainsText()
-    {
+    //  Test for lesson 3 ex 2
+/*    @Test
+    public void searchFieldContainsText() {
         assertElementHasText(By.xpath("//*[contains(@text, 'Search Wikipedia')]"), "There is no such text", "Search Wikipedia");
     }
-//  Method for lesson 3 ex 2
-    private boolean assertElementHasText(By by, String error_message, String expected_text)
-    {
+
+    //  Method for lesson 3 ex 2
+    private boolean assertElementHasText(By by, String error_message, String expected_text) {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.withMessage(error_message + "\n");
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(by, expected_text));
-    }
-/*    @Test
-    public void firstTest()
+    }*/
+
+    //  Test for lesson 3 ex 3
+    @Test
+    public void declineSearchResult()
     {
+        waitForElementAndClick(By.id("org.wikipedia:id/search_container"), "Can't find search Wiki input", 5);
+        waitForElementAndSendKeys(By.xpath("//*[contains(@text, 'Search…')]"), "Catholic", "Can't find Search unput", 5);
+        assertElementsHasText(By.xpath("//*[contains(@text,'Catholic')]"), "No such articles");
+        waitForElementAndClear(By.id("org.wikipedia:id/search_src_text"), "Can't find input", 5);
+        waitForElementAndClick(By.id("org.wikipedia:id/search_close_btn"), "Can't find close button", 5);
+        waitForElementNotPresent(By.id("org.wikipedia:id/search_close_btn"), "X still present", 5);
+    }
+    //  Method for lesson 3 ex 3
+    private boolean assertElementsHasText(By by, String error_message)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.withMessage(error_message + "\n");
+        return driver.findElements(by).size()>0;
+    }
+
+
+
+/*
+    @Test
+    public void firstTest() {
         waitForElementAndClick(By.xpath("//*[contains(@text, 'Search Wikipedia')]"), "Can't find Search field", 5);
         waitForElementAndSendKeys(By.xpath("//*[contains(@text, 'Search…')]"), "JAVA", "Can't find Search unput", 5);
         waitForElementPresent(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"), "Cannot find any shit", 15);
@@ -61,18 +82,16 @@ public class FirstTest {
     }
 
     @Test
-    public void testCancelSearch()
-    {
-        waitForElementAndClick(By.id( "org.wikipedia:id/search_container"), "Can't find search Wiki input", 5);
+    public void testCancelSearch() {
+        waitForElementAndClick(By.id("org.wikipedia:id/search_container"), "Can't find search Wiki input", 5);
         waitForElementAndSendKeys(By.xpath("//*[contains(@text, 'Search…')]"), "JAVA", "Can't find Search unput", 5);
         waitForElementAndClear(By.id("org.wikipedia:id/search_src_text"), "Can't find input", 5);
         waitForElementAndClick(By.id("org.wikipedia:id/search_close_btn"), "Can't find close button", 5);
-        waitForElementNotPresent(By.id("org.wikipedia:id/search_close_btn") , "X still present", 5);
+        waitForElementNotPresent(By.id("org.wikipedia:id/search_close_btn"), "X still present", 5);
     }
-       
+
     @Test
-    public void testCompareArticleTitle()
-    {
+    public void testCompareArticleTitle() {
         waitForElementAndClick(By.xpath("//*[contains(@text, 'Search Wikipedia')]"), "Can't find Search field", 5);
         waitForElementAndSendKeys(By.xpath("//*[contains(@text, 'Search…')]"), "JAVA", "Can't find Search unput", 5);
         waitForElementAndClick(By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"), "No such article", 5);
@@ -86,10 +105,9 @@ public class FirstTest {
                 article_title
         );
     }
-
-//    Метод позволяет ожидать появления элемента по xpath, показывать ошибку в случае ненахождения error_message, ждёт появления элемента определённое время timeoutInSeconds
-    private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
-    {
+*/
+    //    Метод позволяет ожидать появления элемента по xpath, показывать ошибку в случае ненахождения error_message, ждёт появления элемента определённое время timeoutInSeconds
+    private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(error_message + "\n");
         return wait.until(
@@ -97,30 +115,26 @@ public class FirstTest {
         );
     }
 
-//  Перегрузка метода waitForElementPresentByXpath
-    private WebElement waitForElementPresent(By by, String error_message)
-    {
+    //  Перегрузка метода waitForElementPresentByXpath
+    private WebElement waitForElementPresent(By by, String error_message) {
         return waitForElementPresent(by, error_message, 10);
     }
 
-//  Ждём элемент и тыкаем на него
-    private WebElement waitForElementAndClick(By by, String error_message, long timeoutInSeconds)
-    {
+    //  Ждём элемент и тыкаем на него
+    private WebElement waitForElementAndClick(By by, String error_message, long timeoutInSeconds) {
         WebElement element = waitForElementPresent(by, error_message, timeoutInSeconds);
         element.click();
         return element;
     }
 
-//  Ждём элемент и печатаем в нём
-    private WebElement waitForElementAndSendKeys(By by, String value, String error_message, long timeoutInSeconds)
-    {
+    //  Ждём элемент и печатаем в нём
+    private WebElement waitForElementAndSendKeys(By by, String value, String error_message, long timeoutInSeconds) {
         WebElement element = waitForElementPresent(by, error_message, timeoutInSeconds);
         element.sendKeys(value);
         return element;
     }
 
-    private boolean waitForElementNotPresent(By by, String error_message, long timeoutInSeconds)
-    {
+    private boolean waitForElementNotPresent(By by, String error_message, long timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
         wait.withMessage(error_message + "\n");
         return wait.until(
@@ -128,11 +142,9 @@ public class FirstTest {
         );
     }
 
-    private WebElement waitForElementAndClear(By by, String error_message, long timeoutInSeconds)
-    {
-        WebElement element= waitForElementPresent(by, error_message, timeoutInSeconds);
+    private WebElement waitForElementAndClear(By by, String error_message, long timeoutInSeconds) {
+        WebElement element = waitForElementPresent(by, error_message, timeoutInSeconds);
         element.clear();
         return element;
     }
-*/
 }
